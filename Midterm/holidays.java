@@ -8,10 +8,12 @@ public class holidays {
 	public static void main(String[] args) throws Exception {
 		Scanner s = new Scanner(System.in);
 
+		// While loop
 		while (true) {
 			System.out.print("\nEnter number of test cases: ");
 			int tstcases =	s.nextInt(); 
 			
+		// Use 3 Int list for arrays
             List<Integer> c1holidays = new ArrayList<>(
                                 Arrays.asList(6,13,14,20,21,27,28));
             List<Integer> c2holidays = new ArrayList<>(
@@ -19,7 +21,7 @@ public class holidays {
             List<Integer> c3holidays = new ArrayList<>(
                                         Arrays.asList(6,7,14,20,21,27,28));
             
-
+		// if-else for test cases input
 			if (tstcases == 3) 
 			{
 				System.out.println("\nNumber of Test cases: " + tstcases);
@@ -29,7 +31,8 @@ public class holidays {
 
                     System.out.print("\nNumber of Holidays: ");
                     int x = s.nextInt();
-
+		
+		// nested ifs
                     if (x > 3) 
                         {
                             System.out.println("Error!");
@@ -58,7 +61,7 @@ public class holidays {
                             c3holidays.add(addlist);     
                         } 
                  }
-
+		// show input
             System.out.println("\nOutput: ");
             Collections.sort(c1holidays);
             System.out.println("\nNumber of Holidays for Test Case 1: "+ (c1holidays.size())  + (c1holidays.toString()));
